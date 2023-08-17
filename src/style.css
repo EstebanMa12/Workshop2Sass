@@ -19,6 +19,19 @@
   color: hsl(0, 0%, 8%);
   cursor: pointer;
 }
+.nav__item_company {
+  border: 1px solid black;
+  position: absolute;
+  top: 10%;
+  left: 21%;
+  padding: 0.25em 1em;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px hsl(0, 0%, 41%);
+  line-height: 0.625rem;
+  visibility: hidden;
+}
 .nav__icon_hamburguer {
   position: absolute;
   left: 87.5%;
@@ -31,8 +44,58 @@
   z-index: 2;
   display: none;
 }
-.nav__sidebar_menu {
+.nav__item_features {
   border: 1px solid black;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 5px 5px 10px 5px hsl(0, 0%, 41%);
+  width: 12%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 25px 120px;
+  row-gap: 0.625em;
+  padding: 1em;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  visibility: hidden;
+}
+.nav__item_features.open-features {
+  visibility: visible;
+}
+
+.nav__sidebar_container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  background-color: hsla(0, 0%, 8%, 0.75);
+  max-width: 0px;
+  height: 200vh;
+  overflow: hidden;
+}
+.nav__sidebar_container.open__sidebar_container {
+  width: 100%;
+  max-width: 100%;
+}
+.nav__sidebar_menu {
+  background-color: hsl(0, 0%, 98%);
+  width: 63.5%;
+  height: calc(100vh + 2em);
+  position: absolute;
+  top: 48%;
+  z-index: 1;
+  padding-top: 3em;
+}
+.nav__sidebar_features_title {
+  color: hsl(0, 0%, 41%);
+}
+
+.hero__container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  height: 600px;
+  margin: 1em auto;
 }
 
 *,

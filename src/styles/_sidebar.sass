@@ -1,0 +1,24 @@
+@use 'variables'
+
+.nav__sidebar
+    &_container
+        position: absolute
+        display: flex
+        justify-content: flex-end
+        background-color: hsla(0, 0%, 8%, 0.75)
+        max-width: 0px
+        height: 200vh
+        overflow: hidden
+        &.open__sidebar_container
+            width: 100%
+            max-width: 100%
+    &_menu
+        background-color: variables.$Almost-White
+        width: 63.5%
+        height: calc(100vh + 2em)
+        position: absolute
+        top: 48%
+        z-index: 1
+        padding-top: 3em
+    &_features_title
+        color: variables.$Medium-Gray
