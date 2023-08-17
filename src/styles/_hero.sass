@@ -2,7 +2,6 @@
 
 .hero
     &__container
-        border: 1px solid blue 
         display: flex
         flex-direction: row-reverse
         width: 80%
@@ -55,7 +54,40 @@
         justify-content: flex-start
         align-items: center
         position: absolute
-        top: 102%
+        /* top: 102% */
 
         &-items
             margin-right: 1em 
+
+
+@media screen and (max-width: 768px)
+    .hero
+        &__container
+            width: 100%
+            display: block
+        &__image
+            &-desktop
+                display: none
+            &-mobile
+                display: block
+        &__content
+            width: 100%
+            margin-top: 2em
+            & p
+                margin: 1em auto
+                width: 95%
+                text-align: center
+
+            & span
+                margin: 0
+                left: 50%
+                transform: translateX(-50%)
+                z-index: -1
+        &__clients
+            width: 95%
+            top: 87.5%
+            left: 50%
+            transform: translateX(-50%)
+
+
+        
