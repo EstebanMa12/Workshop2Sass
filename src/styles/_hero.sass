@@ -8,3 +8,54 @@
         width: 80%
         height: 600px
         margin: 1em auto
+    &__image
+        &-desktop
+            width: 50%
+            & img
+                width: 100%
+                height: 100%
+                object-fit: scale-down
+        &-mobile
+            width: 100%
+            display: none
+    &__content
+        /* border: 2px solid brown */
+        width: 65%
+        & h1
+            width: 80%
+            height: 42.5%
+            font-size: 4.5rem
+            font-weight: 700
+            display: flex
+            align-items: flex-end
+            margin: 0
+            padding: 0
+        & p
+            width: 80%
+            color: variables.$Medium-Gray
+            margin-top: 2.5em
+            line-height: 1.3em
+        & span
+            /* border: 2px solid red  */
+            position: absolute
+            margin-top: 1.5em
+            color: variables.$Almost-White
+            background-color: variables.$Almost-Black
+            padding: 0.75em
+            border-radius: 10px
+            &:hover
+                color: variables.$Almost-Black
+                font-weight: 700
+                background-color: variables.$Almost-White
+                border: 2px solid variables.$Almost-Black
+                cursor: pointer
+    &__clients
+        border: 2px solid yellowgreen
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        position: absolute
+        top: 102%
+
+        &-items
+            margin-right: 1em 
