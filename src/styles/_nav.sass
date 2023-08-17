@@ -1,0 +1,32 @@
+@use 'variables'
+
+.nav
+    display: flex
+    align-items: center
+    &__logo-image
+        margin-left: 1em 
+
+    &__list
+        width: 90%
+        display: flex
+        align-items: center
+    &__item
+        margin-right: 1.25em
+        color: variables.$Medium-Gray
+        &:hover:not(.irrelevant)
+            color: variables.$Almost-Black
+            cursor: pointer
+    &__icon_hamburguer
+        position: absolute
+        left: 87.5%
+        z-index: 2
+        display: none
+
+    &__icon_close
+        position: absolute
+        left: 87.5%
+        z-index: 2
+        display: none
+
+    &__sidebar_menu
+        border: 1px solid black
