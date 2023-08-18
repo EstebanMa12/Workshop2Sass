@@ -259,7 +259,8 @@ footer {
 }
 
 .attribution {
-  align-content: center;
+  display: flex;
+  margin: 10px;
   justify-content: center;
 }
 
