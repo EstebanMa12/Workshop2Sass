@@ -22,8 +22,8 @@
 .nav__item_company {
   border: 1px solid black;
   position: absolute;
-  top: 10%;
-  left: 21%;
+  top: 5%;
+  left: 13%;
   padding: 0.25em 1em;
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 41%);
@@ -31,6 +31,9 @@
   box-shadow: 5px 5px 10px 5px hsl(0, 0%, 41%);
   line-height: 0.625rem;
   visibility: hidden;
+}
+.nav__item_company.open-company-details {
+  visibility: visible;
 }
 .nav__icon_hamburguer {
   position: absolute;
@@ -55,7 +58,7 @@
   row-gap: 0.625em;
   padding: 1em;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 6%;
   visibility: hidden;
 }
@@ -172,12 +175,12 @@
   cursor: pointer;
 }
 .hero__clients {
-  border: 2px solid yellowgreen;
+  /* border: 2px solid yellowgreen */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-  /* top: 102% */
+  top: 60%;
 }
 .hero__clients-items {
   margin-right: 1em;
